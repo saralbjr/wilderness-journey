@@ -31,8 +31,8 @@ const Index = () => {
       {/* Main content */}
       <main className="relative z-10 flex items-center justify-center h-screen">
         <div className="bg-white bg-opacity-80 p-8 rounded-lg shadow-lg max-w-md">
-          <h1 className="text-4xl font-bold mb-4 text-center font-playfair">Wilderness Experience</h1>
-          <p className="text-xl italic text-center font-playfair">
+          <h1 className="text-4xl font-bold mb-4 text-center font-segoe">Wilderness Experience</h1>
+          <p className="text-xl italic text-center font-segoe">
             "The mountains are calling and I must go."
             <br />
             - John Muir
@@ -40,8 +40,17 @@ const Index = () => {
         </div>
       </main>
 
-      {/* Google Fonts import */}
-      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet" />
+      {/* Custom font styles */}
+      <style>
+        {`
+          @font-face {
+            font-family: 'Segoe UI Historic';
+            src: url('/fonts/segoe-ui-historic.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+          }
+        `}
+      </style>
     </div>
   );
 };
@@ -49,7 +58,7 @@ const Index = () => {
 const NavLink = ({ to, children }) => (
   <Link 
     to={to} 
-    className="text-white text-2xl font-semibold hover:text-gray-300 transition-colors duration-300 font-playfair"
+    className="text-white text-2xl font-semibold hover:text-gray-300 transition-colors duration-300 font-segoe"
     style={{
       textShadow: '-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000',
     }}

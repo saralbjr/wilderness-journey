@@ -72,7 +72,7 @@ module.exports = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       fontFamily: {
-        playfair: ['Playfair Display', 'serif'],
+        segoe: ['Segoe UI Historic', 'sans-serif'],
       },
     },
   },
