@@ -14,8 +14,8 @@ const Index = () => {
 
       {/* Navbar */}
       <nav className="relative z-10">
-        <div className="container mx-auto px-6 py-3 flex flex-col items-center">
-          <div className="mb-4">
+        <div className="container mx-auto px-6 py-3 flex justify-between items-center">
+          <div>
             <img src="/wilderness-experience-logo.png" alt="Wilderness Experience Logo" className="h-16 w-auto" />
           </div>
           <div className="flex space-x-6">
@@ -24,6 +24,7 @@ const Index = () => {
             <Link to="/gallery" className="text-white hover:text-gray-300">Gallery</Link>
             <Link to="/packages" className="text-white hover:text-gray-300">Our Packages</Link>
           </div>
+          <div className="w-16"></div> {/* This empty div helps balance the navbar */}
         </div>
       </nav>
 
