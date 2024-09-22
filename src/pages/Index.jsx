@@ -13,12 +13,12 @@ const Index = () => {
       ></div>
 
       {/* Navbar */}
-      <nav className="relative z-10 bg-black bg-opacity-50">
-        <div className="container mx-auto px-6 py-3 flex justify-between items-center">
-          <div className="flex items-center">
-            <img src="/wilderness-experience-logo.png" alt="Wilderness Experience Logo" className="h-12 w-auto" />
+      <nav className="relative z-10">
+        <div className="container mx-auto px-6 py-3 flex flex-col items-center">
+          <div className="mb-4">
+            <img src="/wilderness-experience-logo.png" alt="Wilderness Experience Logo" className="h-16 w-auto" />
           </div>
-          <div className="hidden md:flex space-x-6">
+          <div className="flex space-x-6">
             <Link to="/" className="text-white hover:text-gray-300">Home</Link>
             <Link to="/destination" className="text-white hover:text-gray-300">Destination</Link>
             <Link to="/gallery" className="text-white hover:text-gray-300">Gallery</Link>
