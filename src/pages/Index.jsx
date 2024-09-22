@@ -14,17 +14,16 @@ const Index = () => {
 
       {/* Navbar */}
       <nav className="relative z-10">
-        <div className="container mx-auto px-6 py-3 flex justify-between items-center">
-          <div>
+        <div className="container mx-auto px-6 py-3 flex flex-col items-center">
+          <div className="mb-4">
             <img src="/wilderness-experience-logo.png" alt="Wilderness Experience Logo" className="h-16 w-auto" />
           </div>
-          <div className="flex space-x-6">
-            <Link to="/" className="text-white hover:text-gray-300">Home</Link>
-            <Link to="/destination" className="text-white hover:text-gray-300">Destination</Link>
-            <Link to="/gallery" className="text-white hover:text-gray-300">Gallery</Link>
-            <Link to="/packages" className="text-white hover:text-gray-300">Our Packages</Link>
+          <div className="flex justify-center space-x-12">
+            <NavLink to="/">Home</NavLink>
+            <NavLink to="/destination">Destination</NavLink>
+            <NavLink to="/gallery">Gallery</NavLink>
+            <NavLink to="/packages">Our Packages</NavLink>
           </div>
-          <div className="w-16"></div> {/* This empty div helps balance the navbar */}
         </div>
       </nav>
 
@@ -42,5 +41,17 @@ const Index = () => {
     </div>
   );
 };
+
+const NavLink = ({ to, children }) => (
+  <Link 
+    to={to} 
+    className="text-white text-xl font-semibold hover:text-gray-300 transition-colors duration-300"
+    style={{
+      textShadow: '-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000',
+    }}
+  >
+    {children}
+  </Link>
+);
 
 export default Index;
