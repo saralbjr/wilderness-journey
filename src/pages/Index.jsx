@@ -14,30 +14,34 @@ const Index = () => {
 
       {/* Navbar */}
       <nav className="relative z-10">
-        <div className="container mx-auto px-6 py-3 flex flex-col items-center">
-          <div className="mb-4">
+        <div className="container mx-auto px-6 py-3 flex justify-between items-center">
+          <div>
             <img src="/wilderness-experience-logo.png" alt="Wilderness Experience Logo" className="h-16 w-auto" />
           </div>
-          <div className="flex justify-center space-x-12">
+          <div className="flex justify-center space-x-16">
             <NavLink to="/">Home</NavLink>
             <NavLink to="/destination">Destination</NavLink>
             <NavLink to="/gallery">Gallery</NavLink>
             <NavLink to="/packages">Our Packages</NavLink>
           </div>
+          <div className="w-16"></div> {/* Empty div for balance */}
         </div>
       </nav>
 
       {/* Main content */}
       <main className="relative z-10 flex items-center justify-center h-screen">
         <div className="bg-white bg-opacity-80 p-8 rounded-lg shadow-lg max-w-md">
-          <h1 className="text-4xl font-bold mb-4 text-center">Wilderness Experience</h1>
-          <p className="text-xl italic text-center">
+          <h1 className="text-4xl font-bold mb-4 text-center font-playfair">Wilderness Experience</h1>
+          <p className="text-xl italic text-center font-playfair">
             "The mountains are calling and I must go."
             <br />
             - John Muir
           </p>
         </div>
       </main>
+
+      {/* Google Fonts import */}
+      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet" />
     </div>
   );
 };
@@ -45,7 +49,7 @@ const Index = () => {
 const NavLink = ({ to, children }) => (
   <Link 
     to={to} 
-    className="text-white text-xl font-semibold hover:text-gray-300 transition-colors duration-300"
+    className="text-white text-2xl font-semibold hover:text-gray-300 transition-colors duration-300 font-playfair"
     style={{
       textShadow: '-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000',
     }}
