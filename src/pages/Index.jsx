@@ -13,7 +13,7 @@ const Index = () => {
       ></div>
 
       {/* Navbar */}
-      <nav className="relative z-10">
+      <nav className="relative z-10 bg-black bg-opacity-50">
         <div className="container mx-auto px-6 py-3 flex justify-between items-center">
           <div>
             <img src="/wilderness-experience-logo.png" alt="Wilderness Experience Logo" className="h-16 w-auto" />
@@ -59,9 +59,6 @@ const NavLink = ({ to, children }) => (
   <Link 
     to={to} 
     className="text-white text-2xl font-semibold hover:text-gray-300 transition-colors duration-300 font-segoe"
-    style={{
-      textShadow: '-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000',
-    }}
   >
     {children}
   </Link>
