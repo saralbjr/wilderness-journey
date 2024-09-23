@@ -4,7 +4,7 @@ import { FocusCards } from '@/components/ui/focus-cards';
 
 const Index = () => {
   const cards = [
-    { src: "https://media.istockphoto.com/id/497144224/photo/hiker-walks-on-train-in-himalayas.jpg?s=612x612&w=0&k=20&c=j9K5_AM1dIIh8j7ckuDOvvGl-FpaAbxVjT5O2liWfaM=", title: "EBC Treak" },
+    { src: "https://media.istockphoto.com/id/497144224/photo/hiker-walks-on-train-in-himalayas.jpg?s=612x612&w=0&k=20&c=j9K5_AM1dIIh8j7ckuDOvvGl-FpaAbxVjT5O2liWfaM=", title: "EBC Trek" },
     { src: "https://www.endlessdistances.com/wp-content/uploads/2019/05/img_8368.jpg", title: "ABC Trek" },
     { src: "https://f6d3w8j9.rocketcdn.me/wp-content/uploads/2023/04/nepal-trekking7.jpg", title: "MBC Trek" },
     { src: "https://www.greatnepaltreks.com/wp-content/uploads/2019/11/most-popular-trekking-destinations-in-nepal-24.gif", title: "Namche Bazar Trek" },
